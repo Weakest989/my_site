@@ -2,22 +2,30 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>my site</title>
+  <title>日記・メモ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>memo</h1>
-  <form id="postForm">
-    <input type="text" id="title" placeholder="タイトル" required><br>
-    <textarea id="content" placeholder="本文" rows="5" required></textarea><br>
-    <button type="submit">投稿</button>
-  </form>
+  <h1>日記</h1>
 
-  <hr>
+  <div class="post">
+    <h3>初めての投稿</h3>
+    <small>2025/04/20</small>
+    <p>
+      サイトを作りました。投稿はすべて手動でHTMLに書いていくスタイルです。<br>
+      自分なりに最高なものを作りたいので、改善していきます。
+      過去版のサイトはみられるのかな？そんなことないか。
+      自分の成長が可視化できたほうがなんか嬉しいので方針を変える可能性はあります。
+    </p>
+  </div>
 
-  <h2>投稿一覧</h2>
-  <div id="posts"></div>
-
-  <script src="script.js"></script>
+  <div class="post">
+    <h3>投稿2</h3>
+    <small>2025/04/21</small>
+    <p>
+      ChatGPTに作成を任せてるので文章もどう書いていいのか分からないのが少し難点です。<br>
+      <strong>強調</strong>や<a href="#">リンク</a>もOK。
+    </p>
+  </div>
 </body>
 </html>
