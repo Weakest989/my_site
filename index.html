@@ -2,10 +2,22 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Site</title>
+  <title>my site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>memo</h1>
+  <form id="postForm">
+    <input type="text" id="title" placeholder="タイトル" required><br>
+    <textarea id="content" placeholder="本文" rows="5" required></textarea><br>
+    <button type="submit">投稿</button>
+  </form>
 
+  <hr>
+
+  <h2>投稿一覧</h2>
+  <div id="posts"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
