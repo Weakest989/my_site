@@ -1,31 +1,48 @@
 body {
+  margin: 0;
   font-family: sans-serif;
-  max-width: 600px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: #f7f7f7;
+  display: flex;
 }
 
-input, textarea {
-  width: 100%;
-  margin: 0.5em 0;
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #333;
+  transition: width 0.3s ease;
+  overflow: hidden;
 }
 
-button {
-  padding: 0.5em 1em;
-  background-color: #007acc;
+.side-menu:hover {
+  width: 180px;
+}
+
+.side-menu nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+.side-menu a {
   color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005f99;
-}
-
-.post {
-  background-color: white;
+  text-decoration: none;
   padding: 1em;
-  margin-bottom: 1em;
-  border-left: 4px solid #007acc;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.side-menu a:hover {
+  background-color: #555;
+}
+
+main {
+  margin-left: 60px; /* デフォルト幅 */
+  padding: 2em;
+  transition: margin-left 0.3s ease;
+}
+
+.side-menu:hover + main {
+  margin-left: 180px;
 }
